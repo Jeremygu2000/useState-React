@@ -1,0 +1,60 @@
+.clock-container {
+    width: 200px;
+    /* Largeur de l'horloge */
+    height: 200px;
+    /* Hauteur de l'horloge */
+    position: relative;
+}
+
+.clock-face {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #333;
+    /* Couleur et épaisseur de la bordure de l'horloge */
+    border-radius: 50%;
+    /* Pour rendre l'horloge ronde */
+    position: relative;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background-color: black;
+    /* Couleur des aiguilles */
+}
+
+.hour-hand {
+    width: 4px;
+    /* Épaisseur de l'aiguille des heures */
+    height: 50px;
+    /* Longueur de l'aiguille des heures */
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    /* Point d'origine de rotation */
+}
+
+.minute-hand {
+    width: 3px;
+    /* Épaisseur de l'aiguille des minutes */
+    height: 70px;
+    /* Longueur de l'aiguille des minutes */
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    /* Point d'origine de rotation */
+}
+
+.second-hand {
+    width: 2px;
+    /* Épaisseur de l'aiguille des secondes */
+    height: 80px;
+    /* Longueur de l'aiguille des secondes */
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    /* Point d'origine de rotation */
+    background-color: red;
+    /* Couleur de l'aiguille des secondes */
+}
